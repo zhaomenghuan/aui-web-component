@@ -1,3 +1,3 @@
-# web-component-vue
+# aui-web-component
 
-A web component library based on Vue.js.
+A UI library based on Vue.js and web component.
