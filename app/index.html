@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUI 测试</title>
+</head>
+<body>
+  <aui-header title="aui-header">
+    <p>hello</p>
+  </aui-header>
+
+  <aui-list></aui-list>
+  
+  <script src="../lib/aui-web-component.js"></script>
+  <script type="module">
+    aui.init();
+    window.el = document.querySelector('aui-header')
+    el.addEventListener('title', e => {
+      console.log(e.detail);
+    });
+  </script>
+</body>
+</html>
