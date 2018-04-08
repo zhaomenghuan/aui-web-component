@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>aui-web-components</title>
+    <!-- <script src="./webcomponents-lite.js"></script> -->
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./aui.js"></script>
+    <style>
+      aui-button {
+        margin: 5px;
+      } 
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <aui-button type="primary" onclick="console.log('click')">页面主操作 Normal</aui-button>
+      <aui-button type="primary" disabled="true">页面主操作 Disabled</aui-button>
+      
+      <aui-button type="default">页面次要操作 Normal</aui-button>
+      <aui-button type="default" disabled="true">页面次要操作 Disabled</aui-button>
+      
+      <aui-button type="warn">警告类操作 Normal</aui-button>
+      <aui-button type="warn" disabled="true">警告类操作 Disabled</aui-button>
+      
+      <aui-button type="primary" plain="true">页面主操作 Plain</aui-button>
+      <aui-button type="default" plain="true">页面次要操作 Plain</aui-button>
+      
+      <aui-button type="primary" size="mini">按钮</aui-button>
+      <aui-button type="default" size="mini">按钮</aui-button>
+      <aui-button type="warn" size="mini">按钮</aui-button>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
